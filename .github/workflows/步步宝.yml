@@ -43,6 +43,5 @@ jobs:
         env:
           TZ: Asia/shanghai
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          ZM_zhimabody: ${{ secrets.ZM_zhimabody }}
-          ZM_zhimatxbody: ${{ secrets.ZM_zhimatxbody }}
-          ZM_CASH: ${{ secrets.ZM_CASH }}
+          BBB_bububaoTOKEN: ${{ secrets.BBB_bububaoTOKEN }}
+          BBB_CASH: ${{ secrets.BBB_CASH }}
