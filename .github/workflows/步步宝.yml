@@ -7,7 +7,7 @@ name: 步步宝
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/3 0-23 * * *' # UTC时间 +8 北京
+    - cron: '*/30 15-17* * *' # UTC时间 +8 北京
   watch:
     types: started
   repository_dispatch:
