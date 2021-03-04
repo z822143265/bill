@@ -36,12 +36,12 @@ jobs:
           cd ~/JavaScript
           git checkout main
           npm install
-      - name: '运行 【步步宝】'
+      - name: '运行 【悦动族】'
         run: |
           cd ~/JavaScript/Task
           node bububao.js
         env:
           TZ: Asia/shanghai
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BBB_bububaoTOKEN: ${{ secrets.BBB_bububaoTOKEN }}
-          BBB_CASH: ${{ secrets.BBB_CASH }}
+          YDZ_yuedongzuTOKEN: ${{ secrets.YDZ_yuedongzuTOKEN }}
+          YDZ_CASH: ${{ secrets.YDZ_CASH }}
