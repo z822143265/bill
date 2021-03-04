@@ -39,7 +39,7 @@ jobs:
       - name: '运行 【悦动族】'
         run: |
           cd ~/JavaScript/Task
-          node bububao.js
+          node yuedongzu.js
         env:
           TZ: Asia/shanghai
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
