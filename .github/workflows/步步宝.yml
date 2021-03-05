@@ -7,7 +7,7 @@ name: 步步宝
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0,30 0-16 * * *' # UTC时间 +8 北京
+    - cron: '0,30 0-17 * * *' # UTC时间 +8 北京
   watch:
     types: started
   repository_dispatch:
@@ -19,7 +19,8 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/ziye11/JavaScript.git ~/JavaScript
+          git clone https://github.com/zsy822143265
+/dkd2.git ~/dkd2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,12 +34,12 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/JavaScript
+          cd ~/dkd2
           git checkout main
           npm install
       - name: '运行 【步步宝】'
         run: |
-          cd ~/JavaScript/Task
+          cd ~/dkd2/Task
           node bububao.js
         env:
           TZ: Asia/shanghai
